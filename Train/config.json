@@ -1,0 +1,60 @@
+{
+    "features": {
+        "accelerometer": [
+            "accelerometerX",
+            "accelerometerY",
+            "accelerometerZ"
+        ],
+        "gyroscope": [
+            "gyroscopeX",
+            "gyroscopeY",
+            "gyroscopeZ"
+        ],
+        "ppg": [
+            "ledIR",
+            "ledRed",
+            "ledGreen"
+        ],
+        "temperature": [
+            "tempObject"
+        ]
+    },
+    "labels": {
+        "label_column": "sleep_label"
+    },
+    "windowing": {
+        "window_size_seconds": 60,
+        "step_size_seconds": 30,
+        "batch_size": 64
+    },
+    "frequencies": {
+        "accelerometer": 25,
+        "gyroscope": 25,
+        "ppg": 25,
+        "temperature": 0.2
+    },
+    "filters": {
+        "accelerometer": {
+            "lowcut": 0.1,
+            "highcut": null
+        },
+        "gyroscope": {
+            "lowcut": 0.1,
+            "highcut": null
+        },
+        "ppg": {
+            "lowcut": 0.2,
+            "highcut": 5
+        }
+    },
+    "synthetic_data": {
+        "heart_rate": 70,
+        "duration": 30,
+        "n_fft": 512,
+        "noise_level": 0.4
+    },
+    "segmentation": {
+        "segment_length_seconds": 30,
+        "step_size_seconds": 5
+    }
+}

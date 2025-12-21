@@ -1,0 +1,37 @@
+there is the note about the choosen the best metrics from the formation fo  the code 
+
+
+
+here is the parameter stick to with that we are wroking with the new version of the working 
+
+
+
+here is the parameter we consider for the model & reuslts
+
+======================================================================================
+
+
+# Fixed parameters - this is the choosen parameter confegured the best in the format ; 
+                fixed_params = {
+                    'window_size_seconds': 60,
+                    'segment_length_seconds': 30,
+                    'batch_size':32,
+                    'learning_rate':0.001,
+                    'zero_weight':2
+                }
+
+
+======================================================================================
+
+stick with that to perfrom the kept the best results on hand to show off ; 
+
+
+
+
+--- --- --- 
+
+on the both side we should consider the new readme file to consider the project formation and aim 
+
+    - we got the aim of the project but the structure of the project we will consider to follow is change on hand . . . 
+
+
