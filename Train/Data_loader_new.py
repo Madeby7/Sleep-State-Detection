@@ -203,7 +203,7 @@ def preprocess_sensor_data_ppg(df: pd.DataFrame, features: List[str],
 def resample_data(df: pd.DataFrame, target_freq: float, 
                  columns_to_resample: List[str], 
                  time_col: str = 'unixTimes', 
-                 max_gap: float = 60000, 
+                 max_gap: float = 30000, 
                  verbose: bool = False) -> pd.DataFrame:
     """
     Resample data to target frequency, handling large gaps.
