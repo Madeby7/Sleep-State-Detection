@@ -306,11 +306,11 @@ fold{N}_modelLstm{L}_earlyFusion_WithTemp_removedNS_highpass{H}_order{O}_NoPeakR
 
 | Metric               | Value  |
 |----------------------|--------|
-| ROC AUC              | 0.9094 |
-| F1 Score             | 0.9075 |
-| Accuracy             | 87.90% |
-| Sensitivity (Recall) | 85.65% |
-| Specificity          | 93.52% |
+| ROC AUC              | 0.8735 |
+| F1 Score             | 0.9033 |
+| Accuracy             | 84.77% |
+| Sensitivity (Recall) | 85.97% |
+| Specificity          | 77.66% |
 
 
 
@@ -318,8 +318,8 @@ fold{N}_modelLstm{L}_earlyFusion_WithTemp_removedNS_highpass{H}_order{O}_NoPeakR
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
-| Awake | 0.72 | 0.94 | 0.81 | 4121 |
-| Sleep | 0.97 | 0.86 | 0.91 | 10308 |
+| Awake | 0.48 | 0.77 | 0.59 | 1746 |
+| Sleep | 0.96 | 0.86 | 0.91 | 10353 |
 
 ---
 
