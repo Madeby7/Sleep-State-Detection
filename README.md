@@ -302,15 +302,15 @@ fold{N}_modelLstm{L}_earlyFusion_WithTemp_removedNS_highpass{H}_order{O}_NoPeakR
 
 ## Model Performance
 
-### Example Results (Fold 1)
+### Results (Average 5 folds)
 
 | Metric               | Value  |
 |----------------------|--------|
-| ROC AUC              | 0.9051 |
-| F1 Score             | 0.9318 |
-| Accuracy             | 88%    |
-| Sensitivity (Recall) | 89.42% |
-| Specificity          | 76.92% |
+| ROC AUC              | 0.9094 |
+| F1 Score             | 0.9075 |
+| Accuracy             | 87.90% |
+| Sensitivity (Recall) | 85.65% |
+| Specificity          | 93.52% |
 
 
 
@@ -318,45 +318,10 @@ fold{N}_modelLstm{L}_earlyFusion_WithTemp_removedNS_highpass{H}_order{O}_NoPeakR
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
-| Awake | 0.44 | 0.77 | 0.56 | 195 |
-| Sleep | 0.97 | 0.89 | 0.93 | 1795 |
+| Awake | 0.72 | 0.94 | 0.81 | 4121 |
+| Sleep | 0.97 | 0.86 | 0.91 | 10308 |
 
 ---
-
-## Visualizations
-
-### ROC Curve
-
-The ROC curve demonstrates the model's ability to discriminate between sleep and wake states across various threshold values, achieving an AUC of 0.9051.
-
-<p align="center">
-  <img src="results/fold_1/fold5_fold1_modelLstm128_earlyFusion_WithTemp_removedNS_highpass01_order5_NoPeakRemoval_ppghighpass02low5_StanScaleAll_BinFocalLossG6a02_lrdecayCos12ka01_win60_step30_batch32_FilterSegment30_lr0.0001_roc_curve.png" alt="ROC Curve" width="70%">
-</p>
-
-
-
-### Confusion Matrix
-
-Confusion matrix showing the classification performance. The model demonstrates strong performance in detecting sleep states with 89% recall, while maintaining 77% recall for wake states.
-
-<p align="center">
-  <img src="results/fold_1/fold5_fold1_modelLstm128_earlyFusion_WithTemp_removedNS_highpass01_order5_NoPeakRemoval_ppghighpass02low5_StanScaleAll_BinFocalLossG6a02_lrdecayCos12ka01_win60_step30_batch32_FilterSegment30_lr0.0001_Conf_mat.png" alt="Confusion Matrix" width="60%">
-</p>
-
----
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mkucukos/sleep-awake-detection.git
-cd sleep-wake-detection
-```
-
-License
-
-This project is licensed under the MIT License 
 
 
 
