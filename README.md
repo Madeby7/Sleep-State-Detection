@@ -340,7 +340,7 @@ fold{N}_LF_G{gamma}a{alpha}_win{W}_s{S}_b{B}_lr{LR}.h5
 
 ## Model Performance
 
-### Example Results (Fold 1)
+### Results (Average 5 Folds)
 
 | Metric                  | Value  |
 |-------------------------|--------|
