@@ -344,61 +344,18 @@ fold{N}_LF_G{gamma}a{alpha}_win{W}_s{S}_b{B}_lr{LR}.h5
 
 | Metric                  | Value  |
 |-------------------------|--------|
-| ROC AUC                 | 0.8759 |
-| F1 Score                | 0.9212 |
-| Accuracy                | 87%    |
-| Sensitivity (Recall)    | 87.30% |
-| Specificity             | 79.49% |
-| Optimal Threshold       | 0.6468 |
+| ROC AUC                 | 0.9094 |
+| F1 Score                | 0.9075 |
+| Accuracy                | 85.63% |
+| Sensitivity (Recall)    | 85.65% |
+| Specificity             | 85.52% |
 
 
 ### Class-Level Performance
 
 | Class | Precision | Recall | F1-Score | Support |
 |------|-----------|--------|----------|---------|
-| Awake | 0.40 | 0.79 | 0.54 | 195 |
-| Sleep | 0.98 | 0.87 | 0.92 | 1795 |
+| Awake | 0.52 | 0.86 | 0.64 | 1844 |
+| Sleep | 0.97 | 0.86 | 0.91 | 10308 |
 
 ---
-
-## Visualizations
-
-### ROC Curve
-
-The ROC curve demonstrates the model's discriminative ability across all threshold values,
-achieving an AUC of **0.8759**.
-
-<p align="center">
-  <img
-    src="results/fold_1/fold5_fold1_best_model_smallNew2_removedNS_highpass01_order5_NoPeakRemoval_ppghighpass02low5_RobScaleAll_BinFocalLossG4a02_lrdecayCos12ka05_win60_step30_batch32_FilterSegment30_lr0.0001_roc_curve.png"
-    alt="ROC Curve"
-    width="70%"
-  />
-</p>
-
-
-### Confusion Matrix
-
-Confusion matrix showing classification performance.  
-The model achieves **87% recall for sleep states** while maintaining **79% recall for wake states**.
-
-<p align="center">
-  <img
-    src="results/fold_1/fold5_fold1_best_model_smallNew2_removedNS_highpass01_order5_NoPeakRemoval_ppghighpass02low5_RobScaleAll_BinFocalLossG4a02_lrdecayCos12ka05_win60_step30_batch32_FilterSegment30_lr0.0001_Conf_mat.png"
-    alt="Confusion Matrix"
-    width="60%"
-  />
-</p>
-
----
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mkucukos/sleep-awake-detection.git
-cd sleep-wake-detection
-```
-
-License
-This project is licensed under the MIT License — see the LICENSE
